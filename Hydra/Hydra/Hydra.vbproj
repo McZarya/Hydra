@@ -11,7 +11,7 @@
     <AssemblyName>Hydra</AssemblyName>
     <FileAlignment>512</FileAlignment>
     <MyType>WindowsForms</MyType>
-    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
     <PublishUrl>publish\</PublishUrl>
@@ -29,6 +29,7 @@
     <IsWebBootstrapper>false</IsWebBootstrapper>
     <UseApplicationTrust>false</UseApplicationTrust>
     <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -113,6 +114,24 @@
       <DependentUpon>Form1.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="hydra2.Designer.vb">
+      <DependentUpon>hydra2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="hydra2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="hydra3.Designer.vb">
+      <DependentUpon>hydra3.vb</DependentUpon>
+    </Compile>
+    <Compile Include="hydra3.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="hydra4.Designer.vb">
+      <DependentUpon>hydra4.vb</DependentUpon>
+    </Compile>
+    <Compile Include="hydra4.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -131,8 +150,23 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Form1.en-CA.resx">
+      <DependentUpon>Form1.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.yo-NG.resx">
+      <DependentUpon>Form1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="hydra2.resx">
+      <DependentUpon>hydra2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="hydra3.resx">
+      <DependentUpon>hydra3.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="hydra4.resx">
+      <DependentUpon>hydra4.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
@@ -156,7 +190,6 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="DF1.ico" />
-    <Content Include="original still JPG.ico" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
